@@ -1,7 +1,7 @@
-
 'use strict';
 const inquirer = require('inquirer');
-// var chalkPipe = require('chalk-pipe');
+const fs = require(fs);
+const markDown = require("./generateMarkdown")
 
 // question arrays will go here
 var questions = [
