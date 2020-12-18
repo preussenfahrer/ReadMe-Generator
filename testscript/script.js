@@ -54,6 +54,16 @@ var questions = [
     },
     {
         type: 'input',
+        name: 'user_email',
+        message: 'please put your email address here, if you wish: '
+    },
+    {
+        type: 'input',
+        name: 'user_github',
+        message: 'please feel free to put your GitHub username here, if you wish: '
+    },
+    {
+        type: 'input',
         name: 'proj_confirm',
         message: 'Are you satisfied with the Read Me file you are about to generate? '
 

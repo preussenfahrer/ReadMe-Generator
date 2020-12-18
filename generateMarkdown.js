@@ -20,6 +20,12 @@ function generateMarkdown(data) {
 
     \n ## Information
     \n ${data.proj_information}
+
+    \n ## Email
+    \n ${data.user_email}
+
+    \n ## GitHub
+    \n ${data.user_github}
           
     \n ## Contribute
     \n ${data.proj_contribution}
