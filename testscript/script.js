@@ -1,7 +1,7 @@
 'use strict';
 const inquirer = require('inquirer');
-// const fs = require(fs);
-// const markDown = require("generateMarkdown");
+const fs = require('fs');
+const generateMarkdown = require("../generateMarkdown");
 
 // question arrays will go here
 var questions = [
@@ -36,49 +36,44 @@ var questions = [
         message: "Please list any test instructions for your new project: "
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'proj_licensing',
         message: 'please select any licensing that your project requires. MIT, Apache, and GPL are the most commonly used by developers, and are included here at the top of the list for convenience: ',
         choices: [
-            {
-                name: 'MIT License',   
-            },
-            {
-                name: 'Apache License',
-            },
-            {
-                name: 'GPL License',
-            },
-            {
-                name: 'Affero GPL',
-            },
-            {
-                name: 'Artistic License 2.0',
-            },
-            {
-                name: 'BSD 3-Clause',
-            },
-            {
-                name: 'BSD 2-Clause',
-            },
-            {
-                name: 'Eclipse Public License 1.0',
-            },
-            {
-                name: 'Mozilla Public License 2.0',
-            },
-            {
-                name: 'Public Domain',
-            }
-        ]
-    }
+            'MIT License',
+            'Apache License',
+            'GPL License',
+            'Affero GPL',
+            'Artistic License 2.0',
+            'BSD 3-Clause',
+            'BSD 2-Clause',
+            'Eclipse Public License 1.0',
+            'Mozilla Public License 2.0',
+            'Public Domain',
+        ],
+    },
+    {
+        type: 'input',
+        name: 'proj_confirm',
+        message: 'Are you satisfied with the Read Me file you are about to generate? '
+
+    },
 ];
 
-inquirer.prompt(questions).then((answers) => {
-    console.log(JSON.stringify(answers, null, '  '));
-});
-// first array of questions for README info to be updated by user of app
+inquirer.prompt(questions).then(answers => {
+    const userMarkdown = generateMarkdown(answers);
+    fs.writeFile('README.md', userMarkdown, (err) => err ? console.error(err) : console.log('Success!')
+    );
+}) 
 
-// array for contributors to project
 
-// array for licenses
+
+// function init() {
+//     inquirer.prompt(questions).then((answers) => {
+//         console.log(JSON.stringify(answers, null, '  '));
+//     });
+//     const readme = 
+// };
+    
+
+
