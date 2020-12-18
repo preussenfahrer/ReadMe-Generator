@@ -4,19 +4,19 @@
      
  ## Table of Contents 
 
--[Description](#Description)
+- [Description](#Description)
 
--[Installation](##Installation)
+- [Installation](##Installation)
 
--[Information](##Information)
+- [Information](##Information)
 
--[Contribute](##Contribute)
+- [Contribute](##Contribute)
 
--[Testing](##Testing)
+- [Testing](##Testing)
 
--[Contribute](##Contribute)
+- [Contribute](##Contribute)
 
--[Licensing](###Licensing)
+- [Licensing](###Licensing)
          
     
  ## Description:

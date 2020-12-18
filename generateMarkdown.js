@@ -4,13 +4,13 @@ function generateMarkdown(data) {
 
 
      \n ## Table of Contents 
-\n-[Description](#Description)
-\n-[Installation](##Installation)
-\n-[Information](##Information)
-\n-[Contribute](##Contribute)
-\n-[Testing](##Testing)
-\n-[Contribute](##Contribute)
-\n-[Licensing](###Licensing)
+\n- [Description](#Description)
+\n- [Installation](##Installation)
+\n- [Information](##Information)
+\n- [Contribute](##Contribute)
+\n- [Testing](##Testing)
+\n- [Contribute](##Contribute)
+\n- [Licensing](###Licensing)
          
     \n ## Description:
     \n${data.proj_description}
