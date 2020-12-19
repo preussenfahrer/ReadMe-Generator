@@ -1,5 +1,7 @@
 # ReadMe-Generator
 
+## Instructional Video: https://drive.google.com/file/d/17LxFRYiL0Msboxh-k6ttV_yoZJ9_zCK_/view
+
 ## Description
 
 A GitHub profile is an extremely important aspect of a developer's public identity. You can show off your work to other developers, thus becoming an active part of a dynamic and fluid community. Most importantly, a good README.md file can be seen by potential employers! 
